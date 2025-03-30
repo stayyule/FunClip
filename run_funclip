@@ -1,0 +1,4 @@
+docker run -d --runtime=nvidia --gpus all -p 8080:8080 \
+           -v /home/ixia/jenkins-data:/var/jenkins_home \
+           -v /home/ixia/jenkins-docker-certs:/certs/client:ro \
+           --restart=on-failure funclip
